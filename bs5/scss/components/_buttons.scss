@@ -1,0 +1,13 @@
+
+// Our custom green button
+.btn {
+    background: $green;
+    color: $white;
+    border: $green;
+
+    &:hover {
+        background-color: scale-color($green, $lightness: 5%);
+        color: $white;
+        border: $green;
+    }
+}
