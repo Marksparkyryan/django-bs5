@@ -1,5 +1,5 @@
-1. Create a project folder and cd into it
-2. `git clone git@github.com:Marksparkyryan/django-bs5.git`
+1. Create a local project folder and cd into it
+2. `git clone git@github.com:Marksparkyryan/django-bs5.git` or `https://github.com/Marksparkyryan/django-bs5.git`
 3. `python3 -m venv env`
 4. `source env/bin/activate`
 5. `pip3 install -r django-bs5/requirements.txt`
