@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "presass:watch": "npm run mkdirs && npm run mod:check && npm run js:check && npm run icons:check",
-    "sass:watch": "sass ./scss/style.scss dist/css/style.css --style=compressed --embed-sources --watch",
-    "mod:check": "[ -d node_modules ] && echo 'modules found' || echo 'getting modules...' && npm install",
+    "prebootstrap": "npm run mkdirs && npm run mod:check && npm run js:check && npm run icons:check",
+    "bootstrap": "npm run sass:watch",
     "mkdirs": "mkdir -p dist/js dist/css dist/icons",
-    "js:check": "[ -f dist/js/bootstrap.bundle.min.js ] && echo 'bootstrap js found' || echo 'getting bootstrap js...' npm run js:copy",
+    "mod:check": "[ -d node_modules ] && echo 'modules found' || echo 'getting modules...' && npm install",
+    "sass:watch": "sass ./scss/style.scss dist/css/style.css --style=compressed --embed-sources --watch --quiet",
+    "js:check": "[ -f dist/js/bootstrap.bundle.min.js ] && echo 'bootstrap js found' || echo 'getting bootstrap js...' && npm run js:copy",
     "js:copy": "cp ./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js ./dist/js/",
     "icons:check": "[ -f dist/icons/bootstrap-icons.css ] && echo 'bootstrap icons found' || echo 'getting bootstrap icons...' && npm run icons:copy",
     "icons:copy": "cp -r ./node_modules/bootstrap-icons/font/ ./dist/icons/"
