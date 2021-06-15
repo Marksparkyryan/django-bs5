@@ -2,7 +2,7 @@
 
 ### Don't use yet - [main branch]
 
-### No Task Runner/Bundler Solution - [no-bundler branch]
+### Option 2: No task-runner/bundler solution - [no-bundler branch]
 1. Create a local project folder and cd into it
 2. `git clone git@github.com:Marksparkyryan/django-bs5.git` or `https://github.com/Marksparkyryan/django-bs5.git`
 3. `python3 -m venv env`
